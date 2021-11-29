@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: black;
+}
+
+main{
+    width: 80%;
+    margin: 0 auto;
+}
+
+section{
+    margin-top: 30px;
+    height: 600px;
+    padding: 25px 0;
+    border: 2px solid white;
+}
+
+.link-gradient1{
+    padding: 10px 20px;
+    font-size: 21px;
+    color: pink;
+    background-image: linear-gradient(midnightblue, green) ;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-transform: uppercase;
+
+    /*Tranformaciones - solo funcionan algunos o de a uno cuando puse el inline-block*/
+    transform: translate(-100px, -100px);
+    transform: rotate(90deg);
+    display: inline-block;
+    transform: scale(2,1);
+}
+
+.link-gradient2{
+    padding: 10px 20px;
+    font-size: 21px;
+    color: white;
+    background-image: linear-gradient(to right, yellow, red, midnightblue) ;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.link-gradient3{
+    padding: 10px 20px;
+    font-size: 21px;
+    color: white;
+    background-image: linear-gradient(to bottom right, midnightblue, white) ;
+    border: 2px solid white;
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+.link-gradient4{
+    padding: 10px 20px;
+    font-size: 21px;
+    color: pink;
+    background-image: radial-gradient( #fc5c7d, #6a82fb);
+    border: 2px solid white;
+    border-radius: 30px;
+    text-transform: uppercase;
+
+
+    animation-name: taylorAnim;
+    animation-duration: 8s;
+    animation-delay: 2s;
+    position: relative;
+
+}
+
+@keyframes taylorAnim {
+    0%{
+        left: 0;
+        top: 0;
+    }
+
+    25%{
+        background: red;
+        right: 300px;
+        bottom: 300px;
+    }
+}
